@@ -1,13 +1,10 @@
-import React from "react";
 import Footer from "./Footer/index.jsx";
-import NavBar from "./NavBar";
+import Header from "./Header/index.jsx";
 
 const Layout = ({ childern }) => {
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
+      <Header />
       <main>{childern}</main>
       <Footer />
     </>

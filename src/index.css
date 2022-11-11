@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Red Rose", cursive;
+  }
+
+  h1 {
+    @apply text-[54px];
+    line-height: 140%;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply font-bold text-5xl;
+  }
+
+  .gradient {
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  }
+
+  span {
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+}
