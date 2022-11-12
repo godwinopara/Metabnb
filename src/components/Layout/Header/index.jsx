@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 
 const Header = () => {
   return (
-    <header className="px-6 mt-[43px] mb-[67px] md:px-16 lg:px-10 xl:px-0">
+    <header className="px-6  mt-[43px] mb-[67px] md:px-16 lg:px-10 xl:px-0">
       <NavBar />
     </header>
   );

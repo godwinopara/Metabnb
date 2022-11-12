@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { IoIosMenu, IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 const NavList = ({ navOpen, toggleNav }) => {
   /* ############### NAV LINKS ################# */
@@ -37,7 +36,7 @@ const NavList = ({ navOpen, toggleNav }) => {
               key={id}
               path={page.path}
               name={page.name}
-              styles="mr-12 text-xl text-[#434343]"
+              styles="mr-12 xl:text-xl text-[#434343]"
             />
           );
         })}

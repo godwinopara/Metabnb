@@ -26,7 +26,7 @@ const Nft = () => {
         </div>
 
         {/* ##################################################### */}
-        <div className="mb-16 lg:mb-0 lg:w-1/2 xl:w-[60%]">
+        <div className="mb-16 lg:mb-0 md:w-3/4 lg:w-1/2 xl:w-[60%]">
           <img src={nftImg} alt="places you can pay for with nft" />
         </div>
         {/* ##################################################### */}

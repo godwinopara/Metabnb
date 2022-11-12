@@ -39,18 +39,18 @@ const PlaceToStay = () => {
 
   return (
     <>
-      <section className="px-6 max-w-[1240px] text-[#434343] mb-[75px] mx-auto flex justify-start items-center">
-        <ul className="hidden lg:flex justify-between items-center gap-12">
-          <li className="text-xl">Resturant</li>
-          <li className="text-xl">Cottage</li>
-          <li className="text-xl">Castle</li>
-          <li className="text-xl">fantast city</li>
-          <li className="text-xl">beach</li>
-          <li className="text-xl">Carbins</li>
-          <li className="text-xl">Off-grid</li>
-          <li className="text-xl">Farm</li>
+      <section className="px-6 max-w-[1240px] text-[#434343] mb-[75px] mx-auto flex md:justify-center md:px-16 lg:justify-start items-center xl:px-0">
+        <ul className="hidden lg:flex justify-between items-center lg:gap-5 xl:gap-12">
+          <li className="text-base xl:text-xl">Resturant</li>
+          <li className="text-base xl:text-xl">Cottage</li>
+          <li className="text-base xl:text-xl">Castle</li>
+          <li className="text-base xl:text-xl">fantast city</li>
+          <li className="text-base xl:text-xl">beach</li>
+          <li className="text-base xl:text-xl">Carbins</li>
+          <li className="text-base xl:text-xl">Off-grid</li>
+          <li className="text-base xl:text-xl">Farm</li>
         </ul>
-        <select className="h-[50px] px-2 bg-white border border-[#B4B4B4] rounded-lg lg:hidden">
+        <select className="h-[50px] w-full px-2 bg-white border border-[#B4B4B4] rounded-lg  lg:hidden">
           <option className="text-base">Resturant</option>
           <option className="text-base">Cottage</option>
           <option className="text-base">Castle</option>
@@ -60,7 +60,7 @@ const PlaceToStay = () => {
           <option className="text-base">Off-grid</option>
           <option className="text-base">Farm</option>
         </select>
-        <button className="w-[150px] ml-16 border border-[#B4B4B4] flex justify-between items-center p-3 lg:w-[161px] rounded-lg">
+        <button className="w-full ml-5 md:ml-16 border border-[#B4B4B4] flex justify-between items-center p-3 lg:w-[161px] rounded-lg">
           Location
           <img src={settingsImg} alt="" className="ml-2 lg:ml-10" />
         </button>
