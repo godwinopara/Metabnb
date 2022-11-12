@@ -6,7 +6,7 @@ import ImageWrapper from "./ImageWrapper";
 
 const HeroImages = () => {
   return (
-    <div className="mb-16 flex items-center justify-between xl:mb-0">
+    <div className="mb-[67px] flex items-center md:justify-center lg:w-[45%] lg:justify-between xl:w-auto">
       <ImageWrapper image1={HeroImg1} image2={HeroImg2} styles="mr-2 mt-[90px]" />
       <ImageWrapper image1={HeroImg3} image2={HeroImg4} styles="mb-[90px]" />
     </div>

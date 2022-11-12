@@ -6,9 +6,9 @@ const NavList = ({ navOpen, toggleNav }) => {
   /* ############### NAV LINKS ################# */
   const pages = [
     { path: "/", name: "Home" },
-    { name: "Place to stay" },
-    { name: "NFTs" },
-    { name: "Community" },
+    { path: "place-to-stay", name: "Place to stay" },
+    { path: "#", name: "NFTs" },
+    { path: "#", name: "Community" },
   ];
 
   return (
@@ -30,9 +30,16 @@ const NavList = ({ navOpen, toggleNav }) => {
 
       {/* ########################### DESKTOP ##################### */}
 
-      <ul className="hidden xl:flex xl:justify-center xl:items-center xl:w-[51%]">
+      <ul className="hidden lg:flex lg:justify-center lg:items-center lg:w-1/2">
         {pages.map((page, id) => {
-          return <NavItem key={id} path={page.path} name={page.name} styles="mr-12" />;
+          return (
+            <NavItem
+              key={id}
+              path={page.path}
+              name={page.name}
+              styles="mr-12 text-xl text-[#434343]"
+            />
+          );
         })}
       </ul>
     </>
@@ -41,10 +48,10 @@ const NavList = ({ navOpen, toggleNav }) => {
 
 export default NavList;
 
-const NavItem = ({ path = "#", name, styles }) => {
+const NavItem = ({ path, name, styles }) => {
   return (
     <li className={`${styles}`}>
-      <Link to={path}>{name}</Link>
+      <Link to={`${path}`}>{name}</Link>
     </li>
   );
 };

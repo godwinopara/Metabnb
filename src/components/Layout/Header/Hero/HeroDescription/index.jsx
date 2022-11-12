@@ -3,7 +3,7 @@ import HeroHeading from "./HeroHeading";
 
 const HeroDescription = () => {
   return (
-    <div className="xl:w-[50%]">
+    <div className="md:w-4/5 lg:w-[40%] xl:w-[50%]">
       <HeroHeading />
       <SearchInput />
     </div>

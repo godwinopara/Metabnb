@@ -11,14 +11,14 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="flex justify-between items-center max-w-[1240px] mx-auto mb-12 xl:mb-[125px]">
-        <img src={Logo} alt="logo" className="h-5 lg:h-8" />
+      <nav className="flex justify-between items-center max-w-[1240px] mx-auto mb-12 lg:mb-[125px]">
+        <img src={Logo} alt="logo" className="h-5 md:h-8" />
         <NavList navOpen={navOpen} toggleNav={toggleNav} />
         <button className="hidden text-sm h-10 w-36 gradient rounded-[10px] lg:block lg:text-base lg:h-12 lg:w-44 text-white">
           Connect wallet
         </button>
 
-        <div onClick={toggleNav} className="text-4xl cursor-pointer xl:hidden">
+        <div onClick={toggleNav} className="text-4xl cursor-pointer lg:hidden">
           <IoIosMenu />
         </div>
       </nav>

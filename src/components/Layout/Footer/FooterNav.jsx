@@ -6,7 +6,7 @@ const FooterNav = () => {
   const aboutUs = ["Road map", "Creators", "Career", "Contact us"];
 
   return (
-    <div className="text-white flex flex-col text-center xl:text-left xl:flex-row xl:justify-around xl:w-3/5">
+    <div className="text-white flex flex-col text-center md:text-left md:flex-row md:justify-between xl:justify-around md:w-3/5">
       <FooterNavItem navLists={community} navTitle="Community" />
       <FooterNavItem navLists={places} navTitle="Places" />
       <FooterNavItem navLists={aboutUs} navTitle="About Us" />
