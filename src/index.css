@@ -10,7 +10,7 @@
   }
 
   h1 {
-    @apply text-[54px];
+    @apply text-4xl text-center xl:text-left xl:text-[54px];
     line-height: 140%;
     letter-spacing: -0.02em;
   }

@@ -15,8 +15,8 @@ const Places = () => {
     <section className="max-w-[1240px] mx-auto pt-[39px] pb-[53px]">
       <h2 className="mb-[43px] text-center">Inspiration for your next adventure</h2>
       <div className="grid grid-cols-4 gap-6">
-        {images.map((img) => {
-          return <Card image={img} />;
+        {images.map((img, id) => {
+          return <Card key={id} image={img} />;
         })}
       </div>
     </section>
