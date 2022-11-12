@@ -12,9 +12,9 @@ const Places = () => {
   const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8];
 
   return (
-    <section className="max-w-[1240px] mx-auto pt-[39px] pb-[53px]">
+    <section className="px-6 xl:px-0 max-w-[1240px] mx-auto pt-[39px] pb-[53px]">
       <h2 className="mb-[43px] text-center">Inspiration for your next adventure</h2>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid xl:grid-cols-4 gap-6">
         {images.map((img, id) => {
           return <Card key={id} image={img} />;
         })}
