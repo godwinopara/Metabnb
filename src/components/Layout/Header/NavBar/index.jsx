@@ -7,6 +7,7 @@ const NavBar = () => {
   const [navOpen, setnavOpen] = useState(false);
 
   const toggleNav = () => {
+    console.log(navOpen);
     setnavOpen((previousState) => !previousState);
   };
   return (

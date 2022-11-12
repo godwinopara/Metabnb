@@ -23,7 +23,15 @@ const NavList = ({ navOpen, toggleNav }) => {
         </div>
 
         {pages.map((page, id) => {
-          return <NavItem key={id} path={page.path} name={page.name} styles="mb-4 text-xl" />;
+          return (
+            <NavItem
+              handleClick={toggleNav}
+              key={id}
+              path={page.path}
+              name={page.name}
+              styles="mb-4 text-xl"
+            />
+          );
         })}
       </ul>
 
@@ -47,9 +55,9 @@ const NavList = ({ navOpen, toggleNav }) => {
 
 export default NavList;
 
-const NavItem = ({ path, name, styles }) => {
+const NavItem = ({ path, name, handleClick, styles }) => {
   return (
-    <li className={`${styles}`}>
+    <li onClick={handleClick} className={`${styles}`}>
       <Link to={`${path}`}>{name}</Link>
     </li>
   );
