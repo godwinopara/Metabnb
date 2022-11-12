@@ -5,14 +5,14 @@ import TwitterLogo from "./assets/twitter.svg";
 
 const FooterImg = () => {
   return (
-    <div className="text-white">
+    <div className="text-white flex flex-col items-center xl:flex-row xl:items-left">
       <img src={Logo} alt="company logo" />
-      <div className="mb-14 mt-24 lg:flex">
-        <img src={FacebookLogo} alt="" className="mr-8" />
-        <img src={InstagramLogo} alt="" className="mr-8" />
-        <img src={TwitterLogo} alt="" className="mr-8" />
+      <div className="m-14 xl:mb-14 xl:mt-24 flex justify-between">
+        <img src={FacebookLogo} alt="" className="mr-4 xl:mr-8" />
+        <img src={InstagramLogo} alt="" className="mr-4 xl:mr-8" />
+        <img src={TwitterLogo} alt="" className="mr-4 xl:mr-8" />
       </div>
-      <div>
+      <div className="hidden xl:block">
         <p>&copy; 2022 Metabnb</p>
       </div>
     </div>

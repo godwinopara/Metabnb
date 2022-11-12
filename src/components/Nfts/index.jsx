@@ -6,7 +6,7 @@ const Nft = () => {
       <div className="text-white flex flex-col-reverse items-center xl:justify-between  max-w-[1240px] mx-auto">
         {/* #################################################### */}
 
-        <div className="text-center xl:text-left xl:w-[32%]">
+        <div className="text-center xl:text-left placeholder:xl:w-[32%]">
           <h2 className="mb-[35px]">Metabnb NFTs</h2>
           <p className="mb-[57.55px]">
             Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which
