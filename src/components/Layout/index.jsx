@@ -1,11 +1,11 @@
 import Footer from "./Footer/index.jsx";
 import Header from "./Header/index.jsx";
 
-const Layout = ({ childern }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{childern}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

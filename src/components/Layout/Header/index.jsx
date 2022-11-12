@@ -3,7 +3,7 @@ import Hero from "./Hero";
 
 const Header = () => {
   return (
-    <header>
+    <header className="mt-[43px] mb-[67px]">
       <NavBar />
       <Hero />
     </header>
