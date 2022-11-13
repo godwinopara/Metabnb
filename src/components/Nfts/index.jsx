@@ -1,4 +1,4 @@
-import nftImg from "./assets/nft.svg";
+import ImgNFT from "./assets/nft.png";
 
 /* ################################################################ */
 /* CHECK INDEX.CSS FOR DEFAULT STYLES e.g gradient, span, h1, h2 etc */
@@ -27,7 +27,7 @@ const Nft = () => {
 
         {/* ##################################################### */}
         <div className="mb-16 lg:mb-0 md:w-3/4 lg:w-1/2 xl:w-[60%]">
-          <img src={nftImg} alt="places you can pay for with nft" />
+          <img src={ImgNFT} alt="places you can pay for with nft" />
         </div>
         {/* ##################################################### */}
       </div>

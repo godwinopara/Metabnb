@@ -1,12 +1,12 @@
 import CardWrapper from "../utilities/CardWrapper";
-import Img1 from "../../assets/image-1.svg";
-import Img2 from "../../assets/image-2.svg";
-import Img3 from "../../assets/image-3.svg";
-import Img4 from "../../assets/image-4.svg";
-import Img5 from "../../assets/image-5.svg";
-import Img6 from "../../assets/image-6.svg";
-import Img7 from "../../assets/image-7.svg";
-import Img8 from "../../assets/image-8.svg";
+import Img1 from "../../assets/image-1.png";
+import Img2 from "../../assets/image-2.png";
+import Img3 from "../../assets/image-3.png";
+import Img4 from "../../assets/image-4.png";
+import Img5 from "../../assets/image-5.png";
+import Img6 from "../../assets/image-6.png";
+import Img7 from "../../assets/image-7.png";
+import Img8 from "../../assets/image-8.png";
 
 /* ################################################################ */
 /* CHECK INDEX.CSS FOR DEFAULT STYLES e.g gradient, span, h1, h2 etc */
