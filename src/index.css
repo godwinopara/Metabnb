@@ -13,6 +13,10 @@
     overflow-x: hidden;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   h1 {
     @apply text-4xl text-center lg:text-left lg:text-3xl xl:text-[54px];
     line-height: 140%;

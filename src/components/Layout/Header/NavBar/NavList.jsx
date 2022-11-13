@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 
-const NavList = ({ navOpen, toggleNav }) => {
+const NavList = ({ navOpen, toggleNav, toggleModal }) => {
   /* ############### NAV LINKS ################# */
   const pages = [
     { path: "/", name: "Home" },
@@ -16,7 +16,7 @@ const NavList = ({ navOpen, toggleNav }) => {
 
       <ul
         className={`${navOpen ? "translate-y-0" : "-translate-y-full"} 
-        transition-all absolute inset-0 gradient h-[250px]  text-white px-8 pb-16 xl:hidden`}
+        transition-all absolute inset-0 gradient h-[380px]  text-white px-8 pb-16 xl:hidden`}
       >
         <div onClick={toggleNav} className="flex justify-end text-3xl mt-5 cursor-pointer">
           <IoMdClose />
@@ -33,6 +33,12 @@ const NavList = ({ navOpen, toggleNav }) => {
             />
           );
         })}
+        <button
+          onClick={toggleModal}
+          className="h-14 mt-6 text-lg w-[250px] border border-white rounded-[10px] text-white"
+        >
+          Connect wallet
+        </button>
       </ul>
 
       {/* ########################### DESKTOP ##################### */}
